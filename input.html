@@ -9,11 +9,14 @@
 <body>
 
     <h1>JavaScript Input</h1>
+    <h2>Lag en setning ved å fylle ut formen</h2>
 
     <form id="form">
+
         <label for="navn">Navn:</label>
         <input type="text" name="navn">
-
+        <br>
+        <br>
         <label for="alder">Alder:</label>
         <input type="number" min="12" max="100" name="alder">
 
@@ -23,9 +26,9 @@
         <label for="drikke">Saft</label>
         <input type="radio" name="drikke" value="saft">
         
-        <h3>Velg mat du liker: </h3>
-        <label for="mat">Pizza</label>
-        <input type="checkbox" name="mat" value="pizza">
+        <h3>Velg matrett: </h3>
+        <label for="mat">Østers</label>
+        <input type="checkbox" name="mat" value="østers">
         <label for="mat">Ost</label>
         <input type="checkbox" name="mat" value="ost">
         <label for="mat">Løk</label>
@@ -33,12 +36,18 @@
         <label for="mat">Gnom</label>
         <input type="checkbox" name="mat" value="gnom">
 
+        <h3>Velg antall lag du har:</h3>
+        <input type="range" name="lag" min="1" max="2000">
+
+        <h3>Velg en tidsperiode:</h3>
+        <input type="date" name="dato">
+
         <br>
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Ferdig">
         <br>
         <br>
-        <textarea id="output" rows="10" cols="100"></textarea>
+        <textarea id="output" rows="10" cols="100" disabled></textarea>
 
     </form>
 
