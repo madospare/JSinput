@@ -8,13 +8,38 @@
 </head>
 <body>
 
-    <h1>Oppgave 1</h1>
+    <h1>JavaScript Input</h1>
 
     <form id="form">
         <label for="navn">Navn:</label>
         <input type="text" name="navn">
+
+        <label for="alder">Alder:</label>
+        <input type="number" min="12" max="100" name="alder">
+
+        <h3>Velg favoritt drikke:</h3>
+        <label for="drikke">Vann</label>
+        <input type="radio" name="drikke" value="vann">
+        <label for="drikke">Saft</label>
+        <input type="radio" name="drikke" value="saft">
+        
+        <h3>Velg mat du liker: </h3>
+        <label for="mat">Pizza</label>
+        <input type="checkbox" name="mat" value="pizza">
+        <label for="mat">Ost</label>
+        <input type="checkbox" name="mat" value="ost">
+        <label for="mat">Løk</label>
+        <input type="checkbox" name="mat" value="løk">
+        <label for="mat">Gnom</label>
+        <input type="checkbox" name="mat" value="gnom">
+
+        <br>
+        <br>
         <input type="submit" value="Submit">
-        <p id="tekst"></p>
+        <br>
+        <br>
+        <textarea id="output" rows="10" cols="100"></textarea>
+
     </form>
 
     <script src="script.js"></script>
