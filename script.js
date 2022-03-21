@@ -8,6 +8,8 @@ form.addEventListener("submit", function(event) {
 
     output.innerHTML = "Hei, jeg heter " + navn + "!";
 
+    console.log("Hei, jeg heter " + navn + "!")
+
     event.preventDefault();
 
 });
